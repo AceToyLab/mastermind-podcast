@@ -16,7 +16,17 @@ const newEpisode = `<item>
 </item>`;
 
 const placeholder = /<!--\s*NEW_EPISODES_HERE\s*-->/;
-const updatedRSS = currentRSS.replace(placeholder, newEpisode + '\n    <!-- NEW_EPISODES_HERE -->');
+const updatedRSS = currentRSS.replace(placeholder, newEpisode + '\n    <item>
+  <title>New Mastermind Episode</title>
+  <itunes:author>SoulCaptain</itunes:author>
+  <description>Deep dive into success philosophy.</description>
+  <pubDate>Mon, 16 Feb 2026 19:20:35 GMT</pubDate>
+  <enclosure url="https://drive.google.com/file/d/1zuUo7JDHNw_5ItQVX2MNDaiOc858LqJD/view?usp=drivesdk" length="0" type="audio/mpeg"/>
+  <guid isPermaLink="false">yf62jt</guid>
+  <itunes:duration>00:15:00</itunes:duration>
+  <itunes:explicit>no</itunes:explicit>
+</item>
+    <!-- NEW_EPISODES_HERE -->');
 const encodedRSS = Buffer.from(updatedRSS).toString('base64');
 
 return [{ json: { updatedRSS, encodedRSS } }];
