@@ -1,15 +1,9 @@
-// 1. Get and DECODE the base64 content from GitHub
 const encoded = $node["Get a file1"].json["content"];
 const currentRSS = Buffer.from(encoded, 'base64').toString('utf8');
-
-// 2. Get the Audio URL from Google Drive
 const audioUrl = $node["Upload file1"].json["webViewLink"];
-
-// 3. Get title and summary from Update record1
 const title = $node["Update record1"].json["title"] || "New Mastermind Episode";
 const summary = $node["Update record1"].json["summary"] || "Deep dive into success philosophy.";
 
-// 4. Build the new episode block
 const newEpisode = `<item>
   <title>${title}</title>
   <itunes:author>SoulCaptain</itunes:author>
@@ -21,37 +15,8 @@ const newEpisode = `<item>
   <itunes:explicit>no</itunes:explicit>
 </item>`;
 
-// 5. Use REGEX so spacing in the placeholder never matters again
 const placeholder = /<!--\s*NEW_EPISODES_HERE\s*-->/;
+const updatedRSS = currentRSS.replace(placeholder, newEpisode + '\n    <!-- NEW_EPISODES_HERE -->');
+const encodedRSS = Buffer.from(updatedRSS).toString('base64');
 
-const updatedRSS = currentRSS.replace(
-  placeholder,
-  newEpisode + '\n    <item>
-  <title>New Mastermind Episode</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Deep dive into success philosophy.</description>
-  <pubDate>Mon, 16 Feb 2026 18:41:45 GMT</pubDate>
-  <enclosure url="https://drive.google.com/file/d/1N5mn_cf3sybnQPXgXD1U1h0fZK05q_Ui/view?usp=drivesdk" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">s0o0h5</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <item>
-  <title>New Mastermind Episode</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Deep dive into success philosophy.</description>
-  <pubDate>Mon, 16 Feb 2026 18:52:28 GMT</pubDate>
-  <enclosure url="https://drive.google.com/file/d/1zuUo7JDHNw_5ItQVX2MNDaiOc858LqJD/view?usp=drivesdk" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">xxlgrg</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <!-- NEW_EPISODES_HERE -->'
-);
-
-// 6. Verify the replace actually worked
-if (!updatedRSS.includes('<guid')) {
-  throw new Error('Injection failed — check that NEW_EPISODES_HERE exists in rss.xml on GitHub');
-}
-
-return { updatedRSS };
+return [{ json: { updatedRSS, encodedRSS } }];
