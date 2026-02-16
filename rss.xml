@@ -1,42 +1,31 @@
-const encoded = $node["Get a file1"].json["content"];
-const currentRSS = Buffer.from(encoded, 'base64').toString('utf8');
-const audioUrl = $node["Upload file1"].json["webViewLink"];
-const title = $node["Update record1"].json["title"] || "New Mastermind Episode";
-const summary = $node["Update record1"].json["summary"] || "Deep dive into success philosophy.";
-
-const newEpisode = `<item>
-  <title>${title}</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>${summary}</description>
-  <pubDate>${new Date().toUTCString()}</pubDate>
-  <enclosure url="${audioUrl}" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">${Math.random().toString(36).substring(7)}</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>`;
-
-const placeholder = /<!--\s*NEW_EPISODES_HERE\s*-->/;
-const updatedRSS = currentRSS.replace(placeholder, newEpisode + '\n    <item>
-  <title>New Mastermind Episode</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Deep dive into success philosophy.</description>
-  <pubDate>Mon, 16 Feb 2026 19:20:35 GMT</pubDate>
-  <enclosure url="https://drive.google.com/file/d/1zuUo7JDHNw_5ItQVX2MNDaiOc858LqJD/view?usp=drivesdk" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">yf62jt</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Mastermind</title>
+    <link>https://acetoylab.github.io/mastermind-podcast/</link>
+    <language>en-us</language>
+    <itunes:author>SoulCaptain</itunes:author>
+    <itunes:summary>Modernizing Napoleon Hill's principles for the small business entrepreneur.</itunes:summary>
+    <description>Master the journey of wealth philosophy and entrepreneurial mindset.</description>
+    <itunes:owner>
+      <itunes:name>SoulCaptain</itunes:name>
+      <itunes:email>luckyjoeonthego@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Business">
+      <itunes:category text="Entrepreneurship"/>
+    </itunes:category>
+    <itunes:image href="https://acetoylab.github.io/mastermind-podcast/cover-art.jpg"/>
+    <!-- NEW_EPISODES_HERE -->
     <item>
-  <title>New Mastermind Episode</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Deep dive into success philosophy.</description>
-  <pubDate>Mon, 16 Feb 2026 19:22:53 GMT</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&id=1zuUo7JDHNw_5ItQVX2MNDaiOc858LqJD" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">hkbnw</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <!-- NEW_EPISODES_HERE -->');
-const encodedRSS = Buffer.from(updatedRSS).toString('base64');
-
-return [{ json: { updatedRSS, encodedRSS } }];
+      <title>Welcome to The Mastermind</title>
+      <itunes:author>SoulCaptain</itunes:author>
+      <description>Coming soon: A deep dive into the philosophy of success and wealth for modern entrepreneurs.</description>
+      <pubDate>Sun, 15 Feb 2026 12:00:00 GMT</pubDate>
+      <enclosure url="https://acetoylab.github.io/mastermind-podcast/trailer.mp3" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="false">the-mastermind-trailer-001</guid>
+      <itunes:duration>00:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+  </channel>
+</rss>
