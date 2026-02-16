@@ -16,27 +16,17 @@
       <itunes:category text="Entrepreneurship"/>
     </itunes:category>
     <itunes:image href="https://acetoylab.github.io/mastermind-podcast/cover-art.jpg"/>
-    <item>
-  <title>Forge an Unbreakable Mind</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Unlock your potential by mastering your mental fortress.</description>
-  <pubDate>Mon, 16 Feb 2026 20:00:29 GMT</pubDate>
-  <enclosure url="https://drive.google.com/file/d/1uXm_NIlnknhX0GjvkR85UTC5CniI_0IH/view?usp=drivesdk" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">0yfehc</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <item>
-  <title>Forge an Unbreakable Mind</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Unlock your potential by mastering your mental fortress.</description>
-  <pubDate>Mon, 16 Feb 2026 20:03:22 GMT</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&id=1uXm_NIlnknhX0GjvkR85UTC5CniI_0IH" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">cgofm</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
     <!-- NEW_EPISODES_HERE -->
+    <item>
+      <title>Forge an Unbreakable Mind</title>
+      <itunes:author>SoulCaptain</itunes:author>
+      <description>Unlock your potential by mastering your mental fortress.</description>
+      <pubDate>Mon, 16 Feb 2026 20:03:22 GMT</pubDate>
+      <enclosure url="https://drive.google.com/uc?export=download&amp;id=1uXm_NIlnknhX0GjvkR85UTC5CniI_0IH" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="false">cgofm</guid>
+      <itunes:duration>00:15:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Welcome to The Mastermind</title>
       <itunes:author>SoulCaptain</itunes:author>
