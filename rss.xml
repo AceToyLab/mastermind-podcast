@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The Mastermind</title>
-    <link>https://your-github-username.github.io/mastermind-podcast/</link>
+    <link>https://acetoylab.github.io/mastermind-podcast/</link>
     <language>en-us</language>
     <itunes:author>SoulCaptain</itunes:author>
     <itunes:summary>Modernizing Napoleon Hill's principles for the small business entrepreneur.</itunes:summary>
     <description>Master the journey of wealth philosophy and entrepreneurial mindset.</description>
     <itunes:owner>
       <itunes:name>SoulCaptain</itunes:name>
-      <itunes:email>your-email@example.com</itunes:email>
+      <itunes:email>luckyjoeonthego@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>no</itunes:explicit>
     <itunes:category text="Business">
       <itunes:category text="Entrepreneurship"/>
     </itunes:category>
-    <itunes:image href="https://your-github-username.github.io/mastermind-podcast/cover-art.jpg"/>
+    <itunes:image href="https://acetoylab.github.io/mastermind-podcast/cover-art.jpg"/>
     
     </channel>
 </rss>
