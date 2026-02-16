@@ -17,5 +17,16 @@
     </itunes:category>
     <itunes:image href="https://acetoylab.github.io/mastermind-podcast/cover-art.jpg"/>
     
+    <item>
+      <title>Welcome to The Mastermind</title>
+      <itunes:author>SoulCaptain</itunes:author>
+      <description>Coming soon: A deep dive into the philosophy of success and wealth for modern entrepreneurs.</description>
+      <pubDate>Sun, 15 Feb 2026 12:00:00 GMT</pubDate>
+      <enclosure url="https://acetoylab.github.io/mastermind-podcast/trailer.mp3" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="false">the-mastermind-trailer-001</guid>
+      <itunes:duration>00:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     </channel>
 </rss>
