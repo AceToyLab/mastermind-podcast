@@ -16,7 +16,7 @@
       <itunes:name>SoulCaptain</itunes:name>
       <itunes:email>luckyjoeonthego@gmail.com</itunes:email>
     </itunes:owner>
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Business">
       <itunes:category text="Entrepreneurship"/>
     </itunes:category>
@@ -30,7 +30,7 @@
       <enclosure url="https://acetoylab.github.io/mastermind-podcast/trailer.mp3" length="0" type="audio/mpeg"/>
       <guid isPermaLink="false">the-mastermind-trailer-001</guid>
       <itunes:duration>00:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
     <!-- NEW_EPISODES_HERE -->
