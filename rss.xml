@@ -33,6 +33,16 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
 
+    <item>
+  <title>Build Wealth: Your 90-Day Financial Reset</title>
+  <itunes:author>SoulCaptain</itunes:author>
+  <description>A clear, actionable plan to transform your finances and gain lasting control of your money.</description>
+  <pubDate>Tue, 17 Feb 2026 15:44:07 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&id=1czExjUefZOyAtBNuWsPjq-fq8NFozqUX&.mp3" length="0" type="audio/mpeg"/>
+  <guid isPermaLink="false">ydolwq</guid>
+  <itunes:duration>00:15:00</itunes:duration>
+  <itunes:explicit>false</itunes:explicit>
+</item>
     <!-- NEW_EPISODES_HERE -->
   </channel>
 </rss>
