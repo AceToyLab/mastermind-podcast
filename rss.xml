@@ -43,6 +43,16 @@
   <itunes:duration>00:15:00</itunes:duration>
   <itunes:explicit>false</itunes:explicit>
 </item>
+    <item>
+  <title>Your Future Starts With This Choice</title>
+  <itunes:author>SoulCaptain</itunes:author>
+  <description>The simple decision that unlocks your potential and defines your destiny.</description>
+  <pubDate>Tue, 17 Feb 2026 16:23:23 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&id=1Hn9W-3ihKMGwerxwrYRBDLeYy1ktMLHw&.mp3" length="0" type="audio/mpeg"/>
+  <guid isPermaLink="false">xydw2</guid>
+  <itunes:duration>00:15:00</itunes:duration>
+  <itunes:explicit>false</itunes:explicit>
+</item>
     <!-- NEW_EPISODES_HERE -->
   </channel>
 </rss>
