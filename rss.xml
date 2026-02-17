@@ -73,6 +73,16 @@
   <itunes:duration>00:15:00</itunes:duration>
   <itunes:explicit>false</itunes:explicit>
 </item>
+    <item>
+  <title>The Price of Power</title>
+  <itunes:author>SoulCaptain</itunes:author>
+  <description>Understanding your value is the first step toward true freedom.</description>
+  <pubDate>Tue, 17 Feb 2026 21:53:42 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&id=1dngbHlOkjdSxUkaD1NqEvt6o2ZDBZ5fE&.mp3" length="0" type="audio/mpeg"/>
+  <guid isPermaLink="false">jt5yh</guid>
+  <itunes:duration>00:15:00</itunes:duration>
+  <itunes:explicit>false</itunes:explicit>
+</item>
     <!-- NEW_EPISODES_HERE -->
   </channel>
 </rss>
