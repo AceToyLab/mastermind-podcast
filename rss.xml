@@ -5,7 +5,7 @@
     <link>https://acetoylab.github.io/mastermind-podcast/</link>
     <language>en-us</language>
     <itunes:author>SoulCaptain</itunes:author>
-    <itunes:summary>Modernizing Napoleon Hill's principles for the small business entrepreneur.</itunes:summary>
+    <itunes:summary>Modernizing Napoleon Hill&apos;s principles for the small business entrepreneur.</itunes:summary>
     <description>Master the journey of wealth philosophy and entrepreneurial mindset.</description>
     <itunes:owner>
       <itunes:name>SoulCaptain</itunes:name>
@@ -16,37 +16,7 @@
       <itunes:category text="Entrepreneurship"/>
     </itunes:category>
     <itunes:image href="https://acetoylab.github.io/mastermind-podcast/cover-art.jpg"/>
-    <item>
-  <title>The Unbreakable Promise: Change Yourself, Change Your Life</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>The simple secret to a better future is not hoping for things to be different, but becoming different.</description>
-  <pubDate>Mon, 16 Feb 2026 20:17:07 GMT</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&id=1rWroaHAkwx1r6URR4_0ronGo26VNBQRL" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">jhnzqw</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <item>
-  <title>The Silent Path to Lasting Wealth</title>
-  <itunes:author>SoulCaptain</itunes:author>
-  <description>Why your paycheck isn't the problem, and how to build a life of freedom.</description>
-  <pubDate>Tue, 17 Feb 2026 02:10:06 GMT</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&id=1w6PWYmVFyaABWD4KiAe8JCxME-YJ7yR2" length="0" type="audio/mpeg"/>
-  <guid isPermaLink="false">ynwfi</guid>
-  <itunes:duration>00:15:00</itunes:duration>
-  <itunes:explicit>no</itunes:explicit>
-</item>
-    <!-- NEW_EPISODES_HERE -->
-    <item>
-      <title>Forge an Unbreakable Mind</title>
-      <itunes:author>SoulCaptain</itunes:author>
-      <description>Unlock your potential by mastering your mental fortress.</description>
-      <pubDate>Mon, 16 Feb 2026 20:03:22 GMT</pubDate>
-      <enclosure url="https://drive.google.com/uc?export=download&amp;id=1uXm_NIlnknhX0GjvkR85UTC5CniI_0IH" length="0" type="audio/mpeg"/>
-      <guid isPermaLink="false">cgofm</guid>
-      <itunes:duration>00:15:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
+
     <item>
       <title>Welcome to The Mastermind</title>
       <itunes:author>SoulCaptain</itunes:author>
@@ -57,5 +27,7 @@
       <itunes:duration>00:30</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
+
+    <!-- NEW_EPISODES_HERE -->
   </channel>
 </rss>
